@@ -16,10 +16,6 @@ To begin this project (and all other projects for this course), you will need to
 ```text
 ruby runner.rb <command_name> <file_name>
 ```
-- Submission Scripts
-    - **submit.rb**: Execute this script to submit your project to the submit server.
-    - **submit.jar** and **.submit**: Don't worry about these files, but make sure you have them.
-
 
 Maze File Format
 ------------------
