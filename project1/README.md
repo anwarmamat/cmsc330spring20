@@ -1,6 +1,6 @@
 # Project 1: Maze Solver
 CMSC 330, Spring 2019
-Due Friday, February 11th (Late Deadline: February 12th).
+Due: February 11th (Late Deadline: February 12th).
 
 
 **This is an individual assignment. You must work on this project alone.**
