@@ -350,10 +350,8 @@ You should submit a file `maze.rb` containing your solution. You may submit othe
 Be sure to follow the project description exactly! Your solution will be graded automatically, so any deviation from the specification will result in lost points.
 
 You can submit your `maze.rb` file directly to the [gradescope server][gradescope server]. 
-![Where to find the web submission link][web submit link]  
-Then, use the submit dialog to submit your `maze.rb` file directly.
-![Where to upload the file][web upload example]  
-Select your file using the "Browse" button, then press the "Submit project!" button. You **do not** need to put it in a zip file.
+
+Use the submit dialog to submit your `maze.rb` file directly. Select your file using the "Browse" button, then press the "Submit project!" button. You **do not** need to put it in a zip file.
 
 No matter how you choose to submit your project, make sure that your submission is received by checking the results after submitting.
 
