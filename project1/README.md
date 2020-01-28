@@ -1,5 +1,5 @@
 # Project 1: Maze Solver
-CMSC 330, Spring 2019
+CMSC 330, Spring 2020
 Due: February 11th (Late Deadline: February 12th).
 
 
