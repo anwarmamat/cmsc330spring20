@@ -198,7 +198,7 @@ You do *not* need to return a path representing a solution from start to finish.
 % ruby runner.rb solve inputs/maze1
 true
 ```
-## Part 6: Parse Standard Maze Files (EXTRA CREDIT)
+## Part 6: Parse Standard Maze Files
 
 For this last part, we consider a new maze file format, called *standard maze files*, which is more complex. If we invoke your script with the mode `parse`, your script needs to read in and parse a standard maze file using Ruby regular expressions, then output the maze in the simple maze file format. If any part of the parsed in maze is invalid, then the output will be different; we discuss these situations further below.
 
