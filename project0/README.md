@@ -136,12 +136,27 @@ Finally, we'll install Rust. Note this may take some time.
 
 Most everything is installed on Grace, but there are still some
 language-specific packages that must be installed. First, we
-configure some things. Run the following commands.
+configure some things. Do the following:
 
+* clone this repository
+* cd into project0
 * `csh <grace.csh` This will take quite a long time to run. Be patient.
+* `opam init` (when prompted to modify .profile say no)
 * ``eval `opam config env` `` (these are **backticks** located to the left
   of the 1 key, not single quotes).
-* `opam switch 4.07.0`
-* ``eval `opam config env` `` (Yes, again)
-* `opam install ocamlfind ounit utop dune qcheck`
-* Log out and log back in. Everything should work now!
+* At this point, log out of grace and log back in. Then run:
+* ``eval `opam config env` `` (yes, again)
+
+From there everything should be setup correctly.
+
+If you run:
+
+`ocaml -version`
+
+The ocaml version should be 4.07.1, and if you run
+
+`opam list`
+
+You should see all of the following:
+
+`ocamlfind ounit utop dune qcheck`
