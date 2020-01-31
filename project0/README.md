@@ -58,7 +58,7 @@ Next, we can install some of the software through Homebrew.
 Macs already come with Ruby and the Ruby Gems package manager. We only need
 to install the required gems.
 
-* `sudo gem install sqlite3 sinatra`
+* `sudo gem install minitest sqlite3 sinatra`
 
 If it hangs installing documentation for Sinatra, hit Ctrl-C. It will
 have successfully installed anyway.
@@ -100,7 +100,7 @@ We will install all the packages we need.
 
 Next, we will install some gems.
 
-* `sudo gem install sqlite3 sinatra`
+* `sudo gem install minitest sqlite3 sinatra`
 
 If it hangs installing documentation for Sinatra, hit Ctrl-C. It will
 have successfully installed anyway.
