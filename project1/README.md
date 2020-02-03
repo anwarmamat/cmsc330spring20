@@ -82,9 +82,9 @@ The maze file format specifies that after the header, the file lists all cells i
 
 ```text
 2 0 0 1 1
-0 0 r 1.5
-0 1 ld 2.0 1.0
-1 1 u 1.7
+0 0 d 1.5
+0 1 ur 2.0 1.0
+1 1 l 1.7
 ```
 
 the cell (1, 0) is not listed.  This means that it has no open walls.
