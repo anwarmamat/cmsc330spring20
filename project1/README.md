@@ -76,7 +76,7 @@ The `dirs` part is a set of up to four "open wall" characters, (any combination 
 ```text
 4 7 lur 1.3 5.6 8.2
 ```
-indicates that the cell at coordinates (4,7) has openings that lead left, up, and right from that cell (and thus there is a "closed wall" that prevents movement down). The characters can appear in *any* order, but may only include 'udlr', and each letter may appear at most once. Any missing characters (like the example above) means there is a "closed wall" in that direction of the cell. Similarly, if a maze specification does not mention a particular cell, then you can presume that all of that cell's walls are closed (i.e. the cell has 4 closed walls in all directions).
+indicates that the cell at coordinates (4,7) has openings that lead left, up, and right from that cell (and thus there is a "closed wall" that prevents movement down). The characters can appear in *any* order, but may only include 'udlr', and each letter may appear at most once. Any missing characters (like the example above) means there is a "closed wall" in that direction of the cell. Similarly, if a maze specification does not mention a particular cell, then you can presume that all of that cell's walls are closed (i.e. the cell has 4 closed walls in all directions).  A cell line with no directions specified is also valid, and would indicate that no directions are passable.
 
 The maze file format specifies that after the header, the file lists all cells in the maze in column major order, ie, in x and then in y. If any cells are omitted, they are closed in all directions.  For example, in the following example of a 2x2 maze:
 
@@ -87,7 +87,15 @@ The maze file format specifies that after the header, the file lists all cells i
 1 1 l 1.7
 ```
 
-the cell (1, 0) is not listed.  This means that it has no open walls.
+the cell (1, 0) is not listed.  This means that it has no open walls.  This is equivalent to specifying the line without any directions:
+
+```text
+2 0 0 1 1
+0 0 d 1.5
+0 1 ur 2.0 1.0
+1 0
+1 1 l 1.7
+```
 
 Following the list of open walls for a cell specification is a list of *weights* for each wall opening. These appear in the same order as the open walls: in the example above, the left opening has weight 1.3, the up opening has weight 5.6, and the right opening has weight 8.2. We'll explain what these weights will be used for later.
 
