@@ -162,17 +162,47 @@ the cost of the first move in the path will be 958.1 (the weight for the "d" ope
 
 Also, recall that weights can be negative.
 
-Once you have found which paths are valid and calculated the cost of each valid path, you need to print out the cost and name of each valid path, in order of cost from lowest to highest. For each valid path print its cost (with exactly 4 decimal places, aligned as shown below) and name on a separate line, separated by a single space. To print the numbers aligned as they are below, use `printf("%10.4f", x)`, which will print out a float value to 4 decimal places and pad it with spaces to be 10 characters. For example:
+Once you have found which paths are valid and calculated the cost of each valid path, you need to return the cost and name of each invalid path, in order of cost from lowest to highest.  If there are no paths, simply return "none".  If there are valid paths, you should return an array of strings, each being in the following format:
+
+```text
+<path total cost> <path name>
+```
+
+Note that there is exactly one space between the cost of the path and the path name.
+
+Where `path total cost` is formatted to 4 decimal places and right-aligned in 10 characters.  The best way to format a floating-point value in this way is by doing the following:
+
+```text
+cost = 1.23456789
+formatted = "%10.4f" % cost
+```
+
+This will cause `formatted` to contain the string <pre>"    1.2346"</pre>, rounded to 4 decimal places and aligned correctly.
+
+For example, for maze "inputs/maze2", your function should return the following:
+
+```ruby
+["   99.9958 path1", "  103.7790 path2"]
+```
+
+and for "inputs/maze1", it should return:
+
+```ruby
+"none"
+```
+
+When you run your script with `runner.rb`, the outputs should look like the following:
+
 ```
 % ruby runner.rb paths inputs/maze2
    99.9958 path1
   103.7790 path2
-```
-Any paths that are not valid should not be output. If a maze contains no valid paths (or no paths at all), your program should simply print none.
-```
+
 % ruby runner.rb paths inputs/maze1
 none
 ```
+
+Note, however, that you are should not be printing these values, but rather returning them as described above.
 
 ## Part 3: Pretty-print Maze
 
