@@ -162,7 +162,7 @@ the cost of the first move in the path will be 958.1 (the weight for the "d" ope
 
 Also, recall that weights can be negative.
 
-Once you have found which paths are valid and calculated the cost of each valid path, you need to return the cost and name of each invalid path, in order of cost from lowest to highest.  If there are no paths, simply return "none".  If there are valid paths, you should return an array of strings, each being in the following format:
+Once you have found which paths are valid and calculated the cost of each valid path, you need to return the cost and name of each valid path, in order of cost from lowest to highest.  If there are no paths, simply return "none".  If there are valid paths, you should return an array of strings, each being in the following format:
 
 ```text
 <path total cost> <path name>
