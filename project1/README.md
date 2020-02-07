@@ -147,7 +147,7 @@ Finally, if we invoke your script with the `sortcells` mode, your script should 
 ```
 The output indicates that two cells (1,3) and (3,0) have no openings, four cells have one opening, etc. Cells with the same number of openings are sorted by their column, then row. This means sort by x-coordinate first, then sort by y-coordinate (i.e. lexicographic order).
 
-If there are no cells with a certain number of openings, that line should be omitted.  For example, if there are no cells with exactly 1 opening, you should not pring a line starting with `1,`.
+If there are no cells with a certain number of openings, that line should be omitted.  For example, if there are no cells with exactly 1 opening, you should not print a line starting with `1,`.
 
 ## Part 2: Process & Sort Paths By Cost
 
