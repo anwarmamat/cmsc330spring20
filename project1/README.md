@@ -147,6 +147,8 @@ Finally, if we invoke your script with the `sortcells` mode, your script should 
 ```
 The output indicates that two cells (1,3) and (3,0) have no openings, four cells have one opening, etc. Cells with the same number of openings are sorted by their column, then row. This means sort by x-coordinate first, then sort by y-coordinate (i.e. lexicographic order).
 
+If there are no cells with a certain number of openings, that line should be omitted.  For example, if there are no cells with exactly 1 opening, you should not pring a line starting with `1,`.
+
 ## Part 2: Process & Sort Paths By Cost
 
 As described in the introduction, some maze files will contain paths. Only paths that travel between cells through openings are *valid*. For each valid path, you will need to use the weights for each opening in the maze to calculate the *cost* of the path. For example, if the coordinates (in a simple maze file)
