@@ -2,7 +2,7 @@
 
 Due: February 24 (Late February 25) at 11:59:59 PM
 
-Points: 65P/15SP/15S
+Points: 65P/20SP/15S
 
 ## Introduction
 The goal of this project is to get you familiar with programming in OCaml. You will have to write a number of small functions, each of which is specified in three sections below.
