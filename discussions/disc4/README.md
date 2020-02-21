@@ -42,7 +42,7 @@ You will submit this project to Gradescope. Click on the "D4" assignment and sub
 - **Description:** Return the sum of the square of every integer in the list.
 - **Examples:**
 ```ocaml
-    squared_sum [] = [];;
+    squared_sum [] = 0;;
     squared_sum [4; 5] = 41;;
  ```
 
