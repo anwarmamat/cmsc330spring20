@@ -12,7 +12,7 @@ You should be able to complete Part 1 after the lecture on high-order functions 
 
 ### Ground Rules
 
-In your code, you may **only** use library functions found in the [`stdlib` module][stdlib doc] and the functions provided in `funs.ml`. You **may** use the `@` operator. You **cannot** use the `List` module. You **may not** use any imperative structures of OCaml such as references.
+In your code, you may **only** use library functions found in the [`stdlib` module][stdlib doc] and the functions provided in `funs.ml`. However, you **may not** use the hashtbl module. You **may** use the `@` operator. You **cannot** use the `List` module. You **may not** use any imperative structures of OCaml such as references.
 
 The secret tests are worth 0 points, but check that you did not use any features that were not allowed. You will **lose** points if you fail these tests.
 
