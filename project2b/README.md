@@ -27,6 +27,9 @@ Use the error message that the function specifies as the argument.
 ### Submitting
 You will submit this project to [Gradescope](https://www.gradescope.com/).  Click on the "P2b" project and submit _only_ your **data.ml** and **higher.ml** files.  Any files other than these two will be ignored.
 
+### A note about equality in OCaml
+Unlike most other languages, `=` in OCaml is the operator for structural equality whereas `==` is the operator for physical equality. All functions in this project (and in this class, unless ever specified otherwise) are concerned with structural equality.
+
 ## Part 1: High Order Functions
 
 Write the following functions in `higher.ml` using `map`, `fold`, or `fold_right` as defined in the file `funs.ml`. You **must** use `map`, `fold`, or `fold_right` to complete these functions, so no functions in `higher.ml` should be defined using the `rec` keyword. You will lose points if this rule is not followed. Use the other provided functions in `funs.ml` to make completing the functions easier.
@@ -180,6 +183,8 @@ let empty_ptree f : 'a ptree = (f, Leaf)
 
 You can modify the code from your `int_tree` functions to implement some functions on `ptree`. Remember to use the bundled comparison function!
 
+Just as was the case in the previous part, if trying to insert an element into the tree and the element is already in the tree (i.e. compfn returns 0), then return the original tree unchanged.
+
 #### `pinsert x t`
 - **Type**: `'a -> 'a ptree -> 'a ptree`
 - **Description**: Returns a tree which is the same as tree `t`, but with `x` added to it.
@@ -251,7 +256,7 @@ As you may remember from 216, the inner braces create a new "scope" for variable
 
 If you're a little rusty on block scoping, you can check out [this link][block scope] or play around with scopes and print statements in C using gcc. Note that you do *not* have to worry about types, since every value will be an `int`.
 
-Since we are not forcing you to implement the lookup table in any particular way, we will only test your table through the functions that you implement (specified below). This means that there are many different ways to solve this portion of the project, and as long as all the functions behave as expected, it doesn't matter exactly how you store the data.
+Since we are not forcing you to implement the lookup table in any particular way, we will only test your table through the functions that you implement (specified below). This means that there are many different ways to solve this portion of the project, and as long as all the functions behave as expected, it doesn't matter exactly how you store the data. For this part, variable names will be represented by strings, and any string can be a variable name.
 
 #### `type lookup_table`
 - **Description**: This is not a function. Rather, it is a type that you'll have to define based on what you think is necessary for the below requirements.
