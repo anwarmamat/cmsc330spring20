@@ -20,7 +20,7 @@ Use the Random module to generate random integers between 0 and 1 inclusive. Con
 * Example:  
 ```
     nth_pos [] 0 = None
-    nth_pos ['a'; 'b'; 'c'] 1 = 'b'
-    nth_pos ['a'; 'b'; 'c'] -1 = 'b'
+    nth_pos ['a'; 'b'; 'c'] 1 = (Some 'b')
+    nth_pos ['a'; 'b'; 'c'] -1 = (Some 'c')
     nth_pos ['a'; 'b'; 'c'] 5 = None
 ```
