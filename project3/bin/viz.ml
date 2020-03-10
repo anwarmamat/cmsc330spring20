@@ -1,5 +1,5 @@
-open P4.Nfa
-open P4.Regexp
+open P3.Nfa
+open P3.Regexp
 
 let string_of_int_list lst =
   "[" ^ String.concat ";" (List.map string_of_int lst) ^ "]"
