@@ -1,8 +1,8 @@
 # Project 3: Regular Expression Engine
 
-Due: October 21 (Late October 22) at 11:59:59 PM
+Due: March 30 (Late March 31) at 11:59:59 PM
 
-Points: 35P/35R/30S
+Points: 35P/35SP/30S
 
 ## Overview
 
@@ -37,6 +37,9 @@ You are not required to do this, but it may be helpful in debugging your code. O
 3. Select if you want to convert the NFA to a DFA (with your conversion function) before visualizing.
 4. You should be notified that the image has been successfully generated and put in `output.png`.
 5. Use an image viewer of choice to open `output.png` and see the visual representation of your generated NFA.
+
+## Submitting
+You will submit this project to [Gradescope](https://www.gradescope.com/).  Click on the "P3" project and submit your **nfa.ml** file and **regexp.ml**.  You must submit both of these files every time, and any other files will be ignored.
 
 ## Part 1: NFAs
 
@@ -295,21 +298,6 @@ Precedence | Operator | Description
 4 | <code>&#124;</code> | union
 
 Also, note that all the binary operators are **right associative**.
-
-## Project Submission
-You should submit the files `nfa.ml` and `regexp.ml` containing your solution. You may submit other files, but they will be ignored during grading. We will run your solution as individual OUnit tests just as in the provided public test file.
-
-**If you submit your entire directory ENSURE you do `dune clean` before submitting or it will not compile**
-
-Be sure to follow the project description exactly! Your solution will be graded automatically, so any deviation from the specification will result in lost points.
-
-You can submit your project in two ways:
-
-* Submit your files directly to the [submit server][submit server] by clicking on the submit link in the column next to the project number. Then, use the submit dialog to submit all your files.
-Select your file using the "Browse" button, then press the "Submit project!" button. You do not need to put it in a zip file.
-![Upload your file][web upload example]
-* Submit directly by executing the submission script on a computer with Java and network access. Included in this project are the submission script and related files listed under Project Files. These files should be in the directory containing your project. From there you can run the command `java -jar submit.jar`.
-Make sure that your submission is received by checking the [submit server][submit server] after submitting.
 
 ## Academic Integrity
 Please **carefully read** the academic honesty section of the course syllabus. **Any evidence** of impermissible cooperation on projects, use of disallowed materials or resources, or unauthorized use of computer accounts, **will** be submitted to the Student Honor Council, which could result in an XF for the course, or suspension or expulsion from the University. Be sure you understand what you are and what you are not permitted to do in regards to academic integrity when it comes to project assignments. These policies apply to all students, and the Student Honor Council does not consider lack of knowledge of the policies to be a defense for violating them. Full information is found in the course syllabus, which you should review before starting.
