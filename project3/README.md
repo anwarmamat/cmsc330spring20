@@ -78,7 +78,7 @@ let t1 = (0, Some 'c', 1) (* Transition from state 0 to state 1 on character 'c'
 let t2 = (1, None, 0)   (* Transition from state 1 to state 0 on epsilon *)
 ```
 
-While the formal definition of a transition is a function which maps a state and character to a set of states, we will define transitions as 3-tuples so that each edge in the NFA will correspond to a single transition in the list of transitions.  This will make declaring NFAs more concise.
+While the formal definition of a transition is a function which maps a state and character to a set of states, we will define transitions as 3-tuples so that each edge in the NFA will correspond to a single transition in the list of transitions. This will make the syntax for defining NFAs cleaner, and allows for a one-to-one mapping between elements of the transition list and edges in the NFA graph.
 
 An example NFA would be:
 
