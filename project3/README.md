@@ -18,7 +18,7 @@ Here's how the parts can be assembled into an Interpreter. In Part I you'll simu
 
 To begin this project, you will need to commit any uncommitted changes to your local branch and pull updates from the git repository. [Click here][git instructions] for directions on working with the Git repository.
 
-This is NOT a pair project. You must work on this project alone as with most other CS projects. See the Academic Integrity section for more information. In your code, you may use __any__ non-imperative standard library functions (with the exception of printing, see below), but the ones that will be useful to you will be found in the [`Pervasives`][pervasives doc], [`List`][list doc] and [`String`][string doc] modules. The only imperative feature you may use is the provided `fresh` function in Part 3. You will receive a 0 for any functions using restricted features - we will be checking your code!
+This is NOT a pair project. You must work on this project alone as with most other CS projects. See the Academic Integrity section for more information. In your code, you may use __any__ non-imperative standard library functions (with the exception of printing, see below), but the ones that will be useful to you will be found in the [`Stdlib`][pervasives doc], [`List`][list doc] and [`String`][string doc] modules. The only imperative feature you may use is the provided `fresh` function in Part 3. You will receive a 0 for any functions using restricted features - we will be checking your code!
 
 Several helper functions have been provided for you, as detailed at the end of this document. We have also provided a `Sets` module that correctly implements the functions for a functional [Set module][sets].  **Note:** the functions in the `Sets` module assume that the inputs are valid sets (i.e., they do not contain duplicates).  They will have undefined behavior if you try to give them inputs that do not meet this requirement (such as `[1; 2; 2; 3]`).
 
@@ -307,7 +307,7 @@ Please **carefully read** the academic honesty section of the course syllabus. *
 [modules doc]: https://realworldocaml.org/v1/en/html/files-modules-and-programs.html
 [subset construct]: https://github.com/anwarmamat/cmsc330spring19-public/blob/master/notes/subset.pdf
 [lecture notes]: https://www.cs.umd.edu/class/spring2019/cmsc330/lectures/02-automata.pdf
-[pervasives doc]: https://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html
+[pervasives doc]: https://caml.inria.fr/pub/docs/manual-ocaml/libref/Stdlib.html
 [git instructions]: ../git_cheatsheet.md
 [wikipedia inorder traversal]: https://en.wikipedia.org/wiki/Tree_traversal#In-order
 [submit server]: https://submit.cs.umd.edu
