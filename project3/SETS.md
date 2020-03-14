@@ -11,11 +11,6 @@ insert 3 (insert 2 [])
 insert 3 (insert 3 (insert 2 []))
 ```
 
-## `insert_all xs s`
-
-- Type: `'a list -> 'a list -> 'a list`
-- Description: Inserts all the elements of list `xs` into the set `s`.
-
 ## `elem x a`
 
 - Type: `'a -> 'a list -> bool`
