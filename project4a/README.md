@@ -1,6 +1,6 @@
 # Project 4A: SmallC Parser
 
-Due: April 21th (Late April 22st) at 11:59:59 PM
+Due: April 23 (Late April 24) at 11:59:59 PM
 
 Points: 48P/52SP/0S
 
